@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  background-color: #8A2BE2;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  color: #DD080F;
+  overflow-x: hidden;
+}
+
+.main-heading {
+  font-size: 3rem;
+  margin: 1rem 0 1.3rem;
+  text-shadow: 2px 2px 4px #fff;
+}
+
+@media (max-width:400px) {
+  .main-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.dice-div-container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.dice-div {
+  display: inline-block;
+  margin: 0 2rem;
+  width: 30%;
+}
+
+.dice-div h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2.2rem auto 1.2rem;
+  text-decoration: underline;
+}
+
+.dice-div img {
+width: 100%;
+transition: all 1s;
+border: 2px solid white;
+border-radius: 20px;
+padding: 0 calc(3px + 0.1vw);
+box-sizing: border-box;
+}
+
+.animate {
+  transform: rotate(360deg);
+}
+
+.btn {
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #DD080F, #F95358);
+  border-color: white yellow white yellow;
+  font-size: 1rem;
+  line-height: 2.3;
+  color: white;
+  font-weight: 700;
+}
+
+.btn:active {
+  background-image: linear-gradient(to bottom, #F95358, #DD080F);
+  border-color: yellow white yellow white;
+
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.footer {
+  margin-top: 3rem;
+}
+
+.footer p {
+  color: white;
+  text-shadow: 0 0 4px black;
+  text-align: center;
+}
+
+.footer-icons-div {
+  margin: 1rem 0;
+}
+
+.footer-icons-div a {
+  color: #DD080F;
+  font-size: 1rem;
+  margin: 0.65rem;
+}
